@@ -15,7 +15,7 @@ const Main = () => {
                 <Stack name="NodeJS" background="light-grey" logo="images/node.png"/>
                 <Stack name="MongoDB" background="grey" logo="images/mongo.png"/>
                 <Stack name="Express" background="grey" logo="images/express.png"/>
-                <Stack name="CSS EXPERT" background="light-grey" logo="images/css.png"/>
+                <Stack name="CSS EXPERT" background="light-grey" logo="images/CssPic.png"/>
             </div>
             <h2 style={{textAlign:"center"}}>INTERESTS</h2>
             <div className={Classes.interest}>
