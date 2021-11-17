@@ -1,0 +1,30 @@
+.mainFooter {
+    display: block;
+    text-align: center;
+    background-color: black;
+    padding: 1rem 0;
+}
+.footerItems li{
+    list-style: none;
+    color: white;
+    margin-top: 1rem;
+}
+
+@media (min-width: 40rem) {
+    mainFooter {
+        display: block;
+        text-align: center;
+        background-color: black;
+        padding: 1rem 0;
+    }
+    .footerItems{
+        display: flex;
+        justify-content: center;
+    }
+    .footerItems li{
+        list-style: none;
+        color: white;
+        margin: 0 1rem;
+
+    }
+}
