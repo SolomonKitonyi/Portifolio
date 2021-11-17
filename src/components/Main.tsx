@@ -11,7 +11,7 @@ const Main = () => {
             </div>
             <h2 style={{textAlign: "center"}}>STACKS</h2>
             <div className={Classes.stack}>
-                <Stack name="React" background="grey" logo="images/logo512.png"/>
+                {<Stack name="React" background="grey" logo="images/logo512.png"/> }
                 <Stack name="NodeJS" background="light-grey" logo="images/node.png"/>
                 <Stack name="MongoDB" background="grey" logo="images/mongo.png"/>
                 <Stack name="Express" background="grey" logo="images/express.png"/>

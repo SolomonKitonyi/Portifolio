@@ -31,7 +31,11 @@
         size: cover;
         background-color: aqua;
         margin: auto;
-        animation: profileAnimate 15s 4s infinite;
+        animation: profileAnimate 15s 3s infinite;
+    }
+    .profileImg:hover {
+        cursor: pointer;
+        animation: profileHover 4s 1s 2 ease-in;
     }
     .stack {
         text-align: center;
@@ -49,6 +53,7 @@
 @keyframes profileAnimate {
     0% {
         margin: auto;
+        transform: skewY(10deg);
     }
     50% {
         margin-right: 0;
@@ -58,5 +63,20 @@
     }
     100% {
         margin: 0;
+        transform: skewY(0);
+    }
+}
+@keyframes profileHover {
+    0% {
+        transform: skewY(10deg);
+    }
+    50% {
+        transform: skewY(-10deg);
+    }
+    75% {
+        transform: skewY(15deg);
+    }
+    100% {
+        transform: skewY(0);
     }
 }
