@@ -10,3 +10,17 @@
     height: 50%;
     width: 50%;
 }
+@media (min-width: 40rem) {
+    .stackContent {
+        border: 1px solid blueviolet;
+        box-shadow: 2px 2px 2px #ad6909;
+        border-radius: 5px;
+        height: 10rem;
+        margin: 1rem 0;
+        width: 20rem;
+    }
+    .image {
+        height: 50%;
+        width: 50%;
+    }
+}
