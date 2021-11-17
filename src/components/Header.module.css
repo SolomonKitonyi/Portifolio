@@ -47,6 +47,7 @@
         background: cornflowerblue;
         color: wheat;
         justify-content: space-between;
+        z-index: 1000;
     }
     .toogleButton {
         display: none;
@@ -64,6 +65,7 @@
     }
     .portifolioLogo:hover {
         cursor: pointer;
+        animation: logoAnimate 2s ease-in 0.2s 2;
     }
     .mainNavList {
         list-style: none;
@@ -86,9 +88,37 @@
         padding:0 0.5rem;
         border-radius: 5px;
         cursor: pointer;
+        animation: navLinkAnimate 2s ease-in 0.1s 3;
     }
     .desktopNav {
         display: inline;
     }
 }
-
+@keyframes navLinkAnimate {
+    0% {
+        transform: skewY(0) scale(1.0);
+    }
+    50% {
+        transform: skewY(15deg) scale(1.1);
+    }
+    75% {
+        transform: skewY(-10deg) scale(0.9);
+    }
+    100% {
+        transform: skewY(0) scale(0.7);
+    }
+}
+@keyframes logoAnimate {
+    0% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
