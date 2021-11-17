@@ -18,9 +18,38 @@
         height: 10rem;
         margin: 1rem 0;
         width: 20rem;
+        animation: stackAnimate 3s ease-in 2s infinite;
+    }
+    .stackContent:hover {
+        animation: stackHover 3s ease-in 0.2s 1 forwards;
+        z-index: 50;
+        background-color: cadetblue;
+        cursor: pointer;
     }
     .image {
         height: 50%;
         width: 50%;
+    }
+}
+@keyframes stackAnimate {
+    0% {
+        transform: skewY(10deg);
+    }
+    50% {
+        transform: skewY(-15deg);
+    }
+    100% {
+        transform: skewY(10deg);
+    }
+}
+@keyframes stackHover {
+    0% {
+        transform: scale(0.5)
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
     }
 }

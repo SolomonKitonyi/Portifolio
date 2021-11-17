@@ -46,24 +46,23 @@
     .interest {
         display: flex;
         text-align: center;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
+        animation: interestAnimate 30s ease-out 0.1s infinite;
     }
 }
 @keyframes profileAnimate {
     0% {
-        margin: auto;
-        transform: skewY(10deg);
+        transform: scale(0.5);
     }
     50% {
-        margin-right: 0;
+        transform: scale(1);
     }
     75% {
-        margin: auto;
+        transform: scale(1);
     }
     100% {
-        margin: 0;
-        transform: skewY(0);
+        transform: scale(0.8);
     }
 }
 @keyframes profileHover {
@@ -78,5 +77,24 @@
     }
     100% {
         transform: skewY(0);
+    }
+}
+@keyframes interestAnimate {
+    0% {
+        left: 1rem;
+        transform: scale(0.7) skewX(-30deg) skewY(-3deg);
+    }
+    50% {
+        right: 2rem;
+        transform: scale(1);
+    }
+    75% {
+        left: 1rem;
+        transform: scale(0.5);
+    }
+    100% {
+        left: 0;
+        transform: scale(1) skewX(30deg) skewY(3deg);
+
     }
 }
