@@ -12,6 +12,9 @@
 .toogleButton {
     margin:0 0.5rem;
 }
+.toogleButton:hover {
+    cursor: pointer;
+}
 .Hurbergur {
     width: 1.5rem;
     height: 0.2rem;
@@ -25,5 +28,67 @@
     border-radius: 50%;
     padding: 16px;
     border: 1px solid black;
+    background-color: burlywood;
+}
+.portifolioLogo:hover {
+    cursor: pointer;
+}
+.desktopNav {
+    display: none;
+}
+@media (min-width: 40rem) {
+    .mainHeader {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border: 1px solid black;
+        background: cornflowerblue;
+        color: wheat;
+        justify-content: space-between;
+    }
+    .toogleButton {
+        display: none;
+    }
+    .Hurbergur {
+        display: none;
+    }
+    .portifolioLogo {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        padding: 16px;
+        border: 1px solid black;
+        background-color: burlywood;
+    }
+    .portifolioLogo:hover {
+        cursor: pointer;
+    }
+    .mainNavList {
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    a:-webkit-any-link {
+        text-decoration: none;
+        color: white;
+    }
+    .mainNavList li {
+        margin:0 1rem;
+        list-style: none;
+    }
+    .mainNavList li:hover,
+    .mainNavList li:active {
+        border-bottom: 5px solid grey;
+        background-color: black;
+        padding:0 0.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .desktopNav {
+        display: inline;
+    }
 }
 
