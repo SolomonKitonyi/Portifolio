@@ -31,6 +31,7 @@
         size: cover;
         background-color: aqua;
         margin: auto;
+        animation: profileAnimate 15s 4s infinite;
     }
     .stack {
         text-align: center;
@@ -43,5 +44,19 @@
         text-align: center;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+}
+@keyframes profileAnimate {
+    0% {
+        margin: auto;
+    }
+    50% {
+        margin-right: 0;
+    }
+    75% {
+        margin: auto;
+    }
+    100% {
+        margin: 0;
     }
 }
