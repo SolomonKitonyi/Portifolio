@@ -1,0 +1,64 @@
+.infoCard {
+    margin-top: 3.5rem;
+    text-align: center;
+    border: 2px blanchedalmond solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rebeccapurple;
+    color: rgb(190, 133, 59);
+    background-color: rgb(189, 180, 180);
+}
+
+@media (min-width:40rem) {
+    .infoCard {
+        margin: 3.5rem 0.1rem;
+        text-align: center;
+        border: 2px blanchedalmond solid;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px rebeccapurple;
+        color: rgb(190, 133, 59);
+        background-color: rgb(189, 180, 180);
+        animation: informationCardAnimate 5s ease-out 0.1s 1;
+    }
+    .infoCard:hover {
+        cursor: pointer;
+        animation: informationCardHover 1s ease-out 0.1s 1;
+    }
+}
+
+@keyframes informationCardAnimate {
+    0% {
+        margin-top: 5rem;
+        background-color: royalblue;
+        transform: scale(0.6);
+    }
+    50% {
+        background-color: seashell;
+        transform: scale(0.8);
+    }
+    75% {
+        background-color: violet;
+        transform: scale(1);
+    }
+    100% {
+        background-color: tan;
+        transform: scale(0.9);
+    }
+}
+@keyframes informationCardHover {
+    0% {
+        background-color: royalblue;
+        transform: scale(0.6);
+    }
+    50% {
+        background-color: seashell;
+        transform: scale(0.8);
+    }
+    75% {
+        background-color: violet;
+        transform: scale(1);
+    }
+    100% {
+        background-color: tan;
+        transform: scale(0.9);
+    }
+}
