@@ -50,6 +50,10 @@
         flex-wrap: wrap;
         animation: interestAnimate 30s ease-out 0.1s infinite;
     }
+    .interest:hover {
+        cursor: pointer;
+        transform: scale(2);
+    }
 }
 @keyframes profileAnimate {
     0% {
