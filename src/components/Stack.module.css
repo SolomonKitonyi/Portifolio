@@ -5,6 +5,7 @@
     border-radius: 5px;
     height: 10rem;
     margin: 1rem 0;
+    z-index: -100;
 }
 .image {
     height: 50%;
@@ -19,6 +20,7 @@
         margin: 1rem 0;
         width: 20rem;
         animation: stackAnimate 3s ease-in 2s infinite;
+        z-index: -100;
     }
     .stackContent:hover {
         animation: stackHover 3s ease-in 0.2s 1 forwards;
