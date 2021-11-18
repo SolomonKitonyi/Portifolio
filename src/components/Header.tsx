@@ -10,13 +10,15 @@ const Header = () => {
                 <span className={Classes.Hurbergur}></span>
                 <span className={Classes.Hurbergur}></span>
             </div>
+            <Link to="/">
             <div className= {Classes.portifolioLogo}>S.K</div>
+            </Link>
             <div className={Classes.desktopNav}>
                 <ul className={Classes.mainNavList}>
                     <Link to="/profile">
                         <li>PROFILE</li>
                     </Link>
-                    <Link to="/profile">
+                    <Link to="/STACKS">
                         <li>STACK</li>
                     </Link>
                     <Link to="/profile">
