@@ -21,7 +21,7 @@ const Main = () => {
             <div className={Classes.interest}>
                 <Interest name="Machine Learning" content="I am Interested in Machine Learning Concepts" background="green" />
                 <Interest name="Typing" content="I enjoy typing with a speed of over 50 words per minute with 100 percent accuracy" background="gray" />
-                <Interest name="Team Work" content="I very happy while working as a team" background="purple" />
+                <Interest name="Team Work" content="I am very happy while working as a team" background="purple" />
             </div>
         </div>
     );
