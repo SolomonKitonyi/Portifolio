@@ -3,7 +3,7 @@ import React from "react";
 import Classes from "./Stacks.module.css";
 import Header from "./Header";
 import Stack from "./Stack";
-import InformationCard from "./InformatinCard";
+import InformationCard from "./InformationCard";
 import Footer from "./Footer";
 
 const Stacks = () => {
