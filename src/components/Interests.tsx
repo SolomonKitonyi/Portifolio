@@ -1,9 +1,11 @@
 import React from "react";
-import { DefaultDeserializer } from "v8";
+import Header from "./Header";
 
 const Interests = () => {
     return (
-        <div>Interests</div>
+        <div>
+            <Header />
+        </div>
     );
 }
 
