@@ -1,0 +1,11 @@
+.stacks {
+    text-align: center;
+}
+
+@media (min-width: 40rem) {
+    .stacks {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
