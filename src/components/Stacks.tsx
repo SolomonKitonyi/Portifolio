@@ -1,8 +1,11 @@
 import React from "react";
+import Header from "./Header";
 
 const Stacks = () => {
     return (
-        <div>Stacks</div>
+        <div>
+            <Header />
+        </div>
     );
 }
 
