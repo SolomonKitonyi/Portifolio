@@ -11,11 +11,11 @@ const Main = () => {
             </div>
             <h2 style={{textAlign: "center"}}>STACKS</h2>
             <div className={Classes.stack}>
-                {<Stack name="React" background="light-blue" logo="images/logo512.png"/> }
-                <Stack name="NodeJS" background="light-grey" logo="images/node.png"/>
-                <Stack name="MongoDB" background="grey" logo="images/mongo.png"/>
+                {<Stack name="React" background="violet" logo="images/logo512.png"/> }
+                <Stack name="NodeJS" background="purple" logo="images/node.png"/>
+                <Stack name="MongoDB" background="blue" logo="images/mongo.png"/>
                 <Stack name="Express" background="grey" logo="images/express.png"/>
-                <Stack name="CSS EXPERT" background="light-grey" logo="images/CssPic.png"/>
+                <Stack name="CSS EXPERT" background="lightGreen" logo="images/CssPic.png"/>
             </div>
             <h2 style={{textAlign:"center"}}>INTERESTS</h2>
             <div className={Classes.interest}>
