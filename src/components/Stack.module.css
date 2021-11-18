@@ -20,12 +20,12 @@
         margin: 1rem 0;
         width: 20rem;
         animation: stackAnimate 3s ease-in 2s infinite;
-        z-index: -100;
+        z-index: 0;
     }
     .stackContent:hover {
         animation: stackHover 3s ease-in 0.2s 1 forwards;
         z-index: 50;
-        background-color: cadetblue;
+        background-color:blue;
         cursor: pointer;
     }
     .image {

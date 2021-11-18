@@ -8,9 +8,6 @@
     color: white;
     width: 200px;
     height: 200px;
-    z-index: -1000;
-
-
 }
 
 @media (min-width: 40rem) {
@@ -21,7 +18,10 @@
         text-align: center;
         color: white;
         box-shadow: 2px 2px 2px blue;
-        z-index: -1000;
 
+    }
+    .interest:hover {
+        cursor: pointer;
+        transform: scale(1.1);
     }
 }
