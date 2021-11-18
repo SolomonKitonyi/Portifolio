@@ -48,6 +48,7 @@
         color: wheat;
         justify-content: space-between;
         z-index: 1000;
+        animation: headerAnimate 10s ease-in 1s infinite;
     }
     .toogleButton {
         display: none;
@@ -120,5 +121,20 @@
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes headerAnimate {
+    0% {
+       background-color: cornflowerblue;;
+    }
+    50% {
+        background-color: blanchedalmond;
+    }
+    75% {
+        background-color: purple;
+    }
+    100% {
+        background-color: rosybrown;
     }
 }
