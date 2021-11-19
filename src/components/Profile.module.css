@@ -1,0 +1,52 @@
+.image {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 4rem;
+}
+.image:hover{
+    cursor: pointer;
+    animation: imgHover 2s 0.5s 1;
+}
+.image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.toss {
+    display: none;
+}
+.info {
+    display: inline;
+    width: 20rem;
+    text-align: center;
+    color: blueviolet;
+    
+}
+@media (min-width: 40rem) {
+    .toss {
+        position: fixed;
+        display: block;
+        text-align: center;
+        background-color: blueviolet;
+        padding: 0.5rem;
+        margin: 2rem 1rem;
+        top: 10rem;
+        left: 22%;
+        border-radius: 5px;
+        animation: imgHover 2s 0.5s 1;
+    }
+    .toss:hover {
+        cursor: pointer;
+        transform: scale(0.8);
+    }
+}
+@keyframes imgHover {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
