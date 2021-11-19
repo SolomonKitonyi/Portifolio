@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Classes from './Header.module.css'
+import BackDrop from "./BackDrop";
+import SideBar from "./SideBar";
 
 const Header = () => {
-    return (
+    const [openBackDrop, setOPenBackDrop] = useState("none");
+    const [openNav, setOPenNav] = useState("none");
+    const toogleButtonClick = () => {
+        setOPenBackDrop("block")
+        setOPenNav("block")
+    }
+     return (
         <div className= {Classes.mainHeader}>
-            <div className= {Classes.toogleButton}>
+            <BackDrop style={openBackDrop}/>
+            <SideBar style={openNav}/>
+            <div className= {Classes.toogleButton} onClick={toogleButtonClick}>
                 <span className={Classes.Hurbergur}></span>
                 <span className={Classes.Hurbergur}></span>
                 <span className={Classes.Hurbergur}></span>
