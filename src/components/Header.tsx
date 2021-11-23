@@ -13,8 +13,8 @@ const Header = () => {
     }
      return (
         <div className= {Classes.mainHeader}>
-            <BackDrop style={openBackDrop}/>
-            <SideBar style={openNav}/>
+            <BackDrop openBackDrop={openBackDrop} setOPenBackDrop={setOPenBackDrop} setOPenNav={setOPenNav} />
+            <SideBar setOPenNav={setOPenNav} openNav={openNav}openBackDrop={openBackDrop} setOPenBackDrop={setOPenBackDrop}/>
             <div className= {Classes.toogleButton} onClick={toogleButtonClick}>
                 <span className={Classes.Hurbergur}></span>
                 <span className={Classes.Hurbergur}></span>
